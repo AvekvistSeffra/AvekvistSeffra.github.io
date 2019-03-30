@@ -1,0 +1,139 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.1rem;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header h3 {
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#inner-nav {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#inner-nav a, #handle {
+    padding: 1% 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#inner-nav a:hover, #handle:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 1%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+    display: grid;
+
+    margin: 1%;
+
+    grid-template-areas: 
+        "image"
+        "title"
+        "info"
+        "button";
+
+    position: relative;
+}
+
+section img {
+    grid-area: image;
+    margin: 0 auto;
+    width: 60%;
+}
+
+section h2 {
+    grid-area: title;
+    margin: 0;
+}
+
+section p {
+    grid-area: info;
+    margin: 0 0 20%;
+}
+
+section a {
+    grid-area: button;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+section a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+aside p {
+    margin: 2% auto 0;
+    width: 80%;
+}
+
+aside img {
+    width: 160px;
+    height: 160px;
+}
+
+footer p {
+    padding-top: 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 960px) {    
+    #handle {
+        display: none;
+    }
+
+    #inner-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    main {
+        margin: auto;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
+}
