@@ -114,6 +114,10 @@ footer p {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+#profile-picture {
+    border-radius: 80px;
+}
+
 @media screen and (min-width: 960px) {    
     #handle {
         display: none;
