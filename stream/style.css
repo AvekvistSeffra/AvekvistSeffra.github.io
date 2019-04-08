@@ -22,11 +22,11 @@ main {
 }
 
 #starting-soon {
-    transform: translate(0, 130%);
+    transform: translate(0, 110%);
 }
 
 #be-right-back {
-    transform: translate(0, 100%);
+    transform: translate(0, 80%);
 }
 
 main h1 {
