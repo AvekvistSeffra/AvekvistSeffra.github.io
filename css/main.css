@@ -37,7 +37,7 @@ header h3 {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-main {
+aside {
     padding: 1%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -96,16 +96,16 @@ section a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-aside {
+main {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-aside p {
+main p {
     margin: 2% auto 0;
     width: 80%;
 }
 
-aside img {
+main img {
     width: 160px;
     height: 160px;
 }
@@ -131,7 +131,7 @@ footer p {
         height: initial;
     }
 
-    main {
+    aside {
         margin: auto;
 
         grid-template-columns: repeat(3, 1fr);
